@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['"Montserrat"', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -84,11 +88,39 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'number-change': {
+					'0%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					},
+					'20%': {
+						transform: 'translateY(-10px)',
+						opacity: '0'
+					},
+					'40%': {
+						transform: 'translateY(10px)',
+						opacity: '0'
+					},
+					'60%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
+				},
+				'pulse-soft': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.8'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'number-change': 'number-change 0.6s ease-in-out',
+				'pulse-soft': 'pulse-soft 2s ease-in-out infinite'
 			}
 		}
 	},

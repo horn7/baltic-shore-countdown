@@ -1,11 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useMemo } from "react";
+import CountdownTimer from "../components/CountdownTimer";
 
 const Index = () => {
+  const targetDate = useMemo(() => new Date("April 28, 2025 00:00:00"), []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="relative min-h-screen w-full overflow-hidden flex items-center justify-center font-montserrat">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: "url('https://images.unsplash.com/photo-1621799754526-a0d52c49fad5?q=80&w=2070&auto=format&fit=crop')",
+          filter: "brightness(0.9)"
+        }}
+      ></div>
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 z-10 bg-black/10"></div>
+      
+      {/* Content Container */}
+      <div className="relative z-20 px-6 py-10 w-full max-w-4xl">
+        <div className="flex flex-col items-center">
+          <h1 className="text-3xl md:text-5xl font-light text-white mb-6 text-center">
+            <span className="font-semibold">Baltic Shore</span> Awaits
+          </h1>
+          
+          <div className="backdrop-blur-md bg-white/30 rounded-xl p-8 md:p-12 shadow-lg border border-white/20 animate-pulse-soft">
+            <h2 className="text-xl md:text-2xl text-center text-white mb-8">
+              Time Remaining Until April 28, 2025
+            </h2>
+            
+            <CountdownTimer targetDate={targetDate} className="text-white" />
+          </div>
+          
+          <p className="mt-12 text-white/80 text-center max-w-md">
+            Join us for a special event on the beautiful shores of the Baltic Sea.
+            Mark your calendar and prepare for an unforgettable experience.
+          </p>
+        </div>
       </div>
     </div>
   );
