@@ -11,7 +11,7 @@ const Index = () => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1621799754526-a0d52c49fad5?q=80&w=2070&auto=format&fit=crop')",
+          backgroundImage: "url('miedzy.jpeg')",
           filter: "brightness(0.9)"
         }}
       ></div>
@@ -23,7 +23,7 @@ const Index = () => {
       <div className="relative z-20 px-6 py-10 w-full max-w-4xl">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl font-light text-white mb-6 text-center">
-            <span className="font-semibold">Miedzy zdroje</span> here we go again
+            <span className="font-semibold">Miedzyzdroje</span><br /><small>here we go again</small>
           </h1>
           
           <div className="backdrop-blur-md bg-white/30 rounded-xl p-8 md:p-12 shadow-lg border border-white/20 animate-pulse-soft">
