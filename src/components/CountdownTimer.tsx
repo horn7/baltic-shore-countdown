@@ -55,7 +55,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate, className }
 
   const TimeUnit: React.FC<{ value: number; label: string; animate: boolean }> = ({ value, label, animate }) => (
     <div className="flex flex-col items-center mx-2 sm:mx-4">
-      <div className="relative h-20 w-14 overflow-hidden flex justify-center items-center">
+      <div className="relative h-20 w-15 overflow-hidden flex justify-center items-center">
         <span
           className={cn(
             "text-5xl font-semibold transition-transform duration-400",
