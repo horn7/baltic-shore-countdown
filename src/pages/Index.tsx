@@ -23,21 +23,16 @@ const Index = () => {
       <div className="relative z-20 px-6 py-10 w-full max-w-4xl">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl font-light text-white mb-6 text-center">
-            <span className="font-semibold">Baltic Shore</span> Awaits
+            <span className="font-semibold">Miedzy zdroje</span> here we go again
           </h1>
           
           <div className="backdrop-blur-md bg-white/30 rounded-xl p-8 md:p-12 shadow-lg border border-white/20 animate-pulse-soft">
             <h2 className="text-xl md:text-2xl text-center text-white mb-8">
-              Time Remaining Until April 28, 2025
+              Do wyjazdu zostało:
             </h2>
             
             <CountdownTimer targetDate={targetDate} className="text-white" />
           </div>
-          
-          <p className="mt-12 text-white/80 text-center max-w-md">
-            Join us for a special event on the beautiful shores of the Baltic Sea.
-            Mark your calendar and prepare for an unforgettable experience.
-          </p>
         </div>
       </div>
     </div>

@@ -64,9 +64,9 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate, className }
 
   return (
     <div className={cn("flex justify-center items-center", className)}>
-      <TimeUnit value={timeLeft.days} label="Days" />
-      <TimeUnit value={timeLeft.hours} label="Hours" />
-      <TimeUnit value={timeLeft.minutes} label="Minutes" />
+      <TimeUnit value={timeLeft.days} label="Dni" />
+      <TimeUnit value={timeLeft.hours} label="Godzin" />
+      <TimeUnit value={timeLeft.minutes} label="Minut" />
     </div>
   );
 };
